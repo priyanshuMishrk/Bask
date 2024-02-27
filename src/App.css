@@ -1,38 +1,363 @@
-.App {
+@font-face {
+  font-family: GothamMedium;
+  src: url("./Fonts/GothamMedium.ttf");
+}
+
+@font-face {
+  font-family: GothamThin;
+  src: url("./Fonts/Gotham-Light.otf");
+}
+
+* {
+  font-family: GothamMedium;
+}
+
+                                                  /* Home Page */
+
+.homeNav a {
+  text-decoration: none;
+  color:  #300DBE;
+  font-size:medium;
+}
+
+.navButton {
+  background-color: #F7D319;
+  padding: 1vw 2vw;
+}
+
+.carouselText{
+  font-size: 5vw;
+  color : #300DBE;
+}
+
+.carouselW{
+  width: 100vw !important;
+  height: 40vw;
+}
+
+.imager {
+  margin-left: 30vw;
+}
+
+.mainFooter{
+  height: 5vw;
+  background-color: #300DBE;
+  bottom: 0; 
+  z-index: 999;
+  position: relative;
+}
+
+.FooterItems{
+  color: white !important;
+  text-decoration: none;
+  margin-left: 5vw;
+}
+
+.invitationCont{
   text-align: center;
+  padding-top: 5vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.invitation{
+  color :#300DBE;
+  font-size: 9vw;
+  margin-bottom: 5vw;
+  line-height: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.infoPar{
+  color :#300DBE;
+  font-size: 2vw;
+  width: 60%;
+  margin-left: 20%;
+  font-weight:normal;
+  margin-bottom: 20vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.infoHead{
+  color :#300DBE;
+  font-size: 2vw;
+  font-weight:bolder;
+  margin-bottom: 1vw;
+}
+
+.invitationCont ul {
+  list-style: none;
+}
+
+.invitationCont ul li {
+  color: #300DBE;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.invitationCont ul li:hover {
+  cursor: pointer;
+}
+
+
+                                                  /* Our work Internal */
+
+
+.smallHeadOWI{
+  font-size: 2vw;
+  color: #300DBE;
+  width: 55vw;
+  margin-bottom: 4vw;
+}
+.italic{
+  font-style: italic;
+}
+
+.tabText{
+  font-size: 3vw;
+  color: #300DBE;
+  font-weight: 700;
+  font-family: GothamThin;
+  padding-right: 4vw;
+}
+
+.owiTab{
+  justify-content: space-between;
+  margin-bottom: 10vw;
+}
+
+.tabImage img{
+  height: auto;
+  width: 18vw;
+}
+
+.tabImage{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height:   21vw;
 }
 
-.App-link {
-  color: #61dafb;
+.oviBox img{
+  height: auto;
+  width: 24vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.oviBox{
+  justify-content: space-between;
+  margin-bottom: 6vw;
+}
+
+.oviGoalsText{
+  flex-direction: column;
+  font-size: 3vh;
+  color: #300DBE;
+  font-weight: 300;
+  width: 30vw;
+  padding-top: 3vw;
+}
+
+.oviGoals{
+  justify-content: space-between;
+  margin-bottom: 6vw;
+}
+
+.OviGoalsHead{
+  margin-bottom: 1vw;
+}
+
+.oviGoalIm img{
+  height: auto;
+  width: 45vw;
+}
+
+.oviApproachText{
+  flex-direction: column;
+  color: #300DBE;
+  font-weight: 300; 
+  font-size: 3vh;
+  width: 30vw;
+  margin-left: 2vw;
+  padding-top: 6vw;
+}
+
+.oviApproachIm{
+  display: flex;
+}
+.oviApproachIm img {
+  height: auto;
+  width: 20vw;
+  margin-right: 2vw;
+}
+
+.oviApproachTextHead{
+  margin-bottom: 1vw;
+}
+
+.oviApproach{
+  margin-bottom: 6vw;
+}
+
+.oviResult{
+  flex-direction: column;
+}
+
+.oviResultHead{
+  font-weight: 400;
+  color: #300DBE;
+  margin-bottom: 2vw;
+  font-size: 3vh;
+}
+
+.oviResultPar{
+  font-weight: 400;
+  color: #300DBE;
+  margin-bottom: 2vw;
+  font-size: 3vh;
+}
+
+.oviUI{
+  font-weight: 600;
+  color: #300DBE;
+  margin-bottom: 2vw;
+  font-size: 5vh;
+}
+
+.oviButtons{
+  margin-bottom: 2vw;
+}
+
+.oviB1{
+  text-decoration: None !important;
+  padding: 1vw 1vw;
+  background-color: #F7D319 !important;
+  color: #300DBE;
+  border-radius: 1vw;
+}
+
+.oviB2{
+  text-decoration: None !important;
+  padding: 1vw 1vw;
+  background-color: #F7D319 !important;
+  color: #300DBE;
+  border-radius: 1vw;
+  margin-left: 2vw;
+}
+
+.oviB3{
+  text-decoration: None !important;
+  padding: 1vw 1vw;
+  background-color: #F7D319 !important;
+  color: #300DBE;
+  border-radius: 1vw;
+  margin-left: 50vw;
+}
+
+                                                      /* Services */
+
+.servStrategyText{
+  flex-direction: column;
+  color: #300DBE;
+}
+
+.servStrategyTextHead {
+  font-weight: 400;
+  font-size: 4vw;
+  margin-bottom: 2vw;
+}
+
+.servStrategyTextPara {
+  font-size: 2vw;
+  width: 50vw;
+}
+
+.servStrategyImg img {
+  height: 3vw;
+  margin-bottom: 0.5vw;
+}
+
+.servStrategyImg{
+  margin-left: 20vw;
+  margin-top: 15vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.servStrategy{
+  margin-bottom: 8vw;
+}
+
+.servCenterImage img{
+  width: 25vw;
+}
+
+.servCenterImage{
+  justify-content: space-between;
+  margin-bottom: 3vw;
+}
+
+.HelpText{
+  color: #300DBE;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-top: 3vw;
+  font-size: 3vh;
+
+}
+
+.HelpTextHead{
+  margin-bottom: 2vw;
+}
+
+.HelpTextPara{
+  width: 80%;
+}
+
+.HelpBox{
+  display: flex;
+  margin-bottom: 4vw;
+}
+
+.HelpImage img{
+  width: 40vw;
+  height: auto;
+}
+
+.imgCollague{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4vw;
+}
+
+.imgCollague img{
+  height: auto;
+  width: 19vw;
+}
+
+.bottomHead{
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomHeader{
+  color: #300DBE;
+  font-size: 3vw;
+  width: 90%;
+  font-style: italic;
+  margin-bottom: 2vw;
+}
+.bottomHeadPara{
+  color: #300DBE;
+  font-size: 1.5vw;
+  font-weight: 200;
+}
+
+.bottomButtonDiv{
+  text-align: center;
+  margin-bottom: 3vw;
+}
+
+.bottomButton{
+  text-decoration: None !important;
+  padding: 1.5vw 1.5vw;
+  background-color: #F7D319 !important;
+  color: #300DBE;
+  border-radius: 1vw;
 }
