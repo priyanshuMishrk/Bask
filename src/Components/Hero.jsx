@@ -7,7 +7,7 @@ import DemoImage from "../Content/demo.png"
 const Hero = () => {
     return (
       <>
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-between align-items-center mb-5">
             <TextSlider />
             <div className="imager">
                 <img src={DemoImage} alt="Demo" />
