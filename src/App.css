@@ -187,6 +187,7 @@
 }
 
 .dropdown-header3 {
+  cursor: pointer;
   padding: 10px !important;
   background-color:  #33322D;
   color: white;
@@ -212,6 +213,7 @@
 }
 
 .dropdown-header4 {
+  cursor: pointer;
   padding: 10px !important;
   background-color: #E9D986;
   transition: max-height 0.8s ease-in-out;
