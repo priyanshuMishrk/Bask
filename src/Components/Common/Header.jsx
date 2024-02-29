@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Logo from "../../bask_creative_logo.jpeg"
+import Logo from "../../Content/Bask_real_logo.jpeg"
 import { Link } from "react-router-dom";
 
 const Header = () => {

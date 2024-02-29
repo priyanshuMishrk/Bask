@@ -1,6 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import TextSlider from "../Components/TextSlider";
 import DemoImage from "../Content/demo.png"
 

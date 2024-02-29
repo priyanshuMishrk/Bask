@@ -1,5 +1,3 @@
-import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { Carousel } from 'react-bootstrap';
 // import { IoIosArrowRoundForward } from "react-icons/io";
 
@@ -29,38 +27,5 @@ function TextSlider() {
       </Carousel>
     );
   }
-
-// const TextSlider = () => {
-//     return (
-//       <>
-//         <Container className="carouselEffect d-flex"
-//             style={{
-//                 width: '40%',
-//                 overflow : "hidden",
-//             }}
-//         >
-//             <div>
-//             We create  stuff that makes a difference to the community
-//             </div>
-            
-//             <div>
-//             We create  stuff that makes a difference to the consumer
-//             </div>
-            
-//             <div>
-//             We create  stuff that makes a difference to the Algorithm
-//             </div>
-            
-//             <div>
-//             We create  stuff that makes a difference to the competition
-//             </div>
-
-//             <div>
-//             We create  stuff that makes a difference to the creative community
-//             </div>
-//         </Container>
-//       </>
-//     );
-//   };
 
   export default TextSlider;

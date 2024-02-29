@@ -2,14 +2,13 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Header from "../Components/Common/Header"
 import Footer from "../Components/Common/Footer";
-import TabImage from "../Content/owiTab.png"
 import OviBox from "./../Content/owiBoxes.png"
-import OviRect from "./../Content/owiRect.png"
 import { Link } from "react-router-dom";
 import ServiceImage from "./../Content/S1.png";
 import ServiceImage2 from "../Content/S3.png"
 import sCenterImg from "../Content/SCent.png"
 import ServiCollague from "../Content/ServiCollage.png"
+import Chess from "../Content/Chess.png"
 
 const ServiceInternal = () => {
     return (
@@ -36,11 +35,11 @@ const ServiceInternal = () => {
 
                 </div>
 
-                <div className="servCenterImage d-flex">
+                {/* <div className="servCenterImage d-flex">
                     <img src={sCenterImg} alt="" />
                     <img src={sCenterImg} alt="" />
                     <img src={sCenterImg} alt="" />
-                </div>
+                </div> */}
 
 
                 <div className="HelpBox">
@@ -54,15 +53,15 @@ const ServiceInternal = () => {
                         </span>
                     </div>
                     <div className="HelpImage">
-                        <img src={OviBox} alt="" />
+                        <img src={Chess} alt="" />
                     </div>
                 </div>
-                <div className="imgCollague">
+                {/* <div className="imgCollague">
                     <img src={ServiCollague} alt="" />
                     <img src={ServiCollague} alt="" />
                     <img src={ServiCollague} alt="" />
                     <img src={ServiCollague} alt="" />
-                </div>
+                </div> */}
                 <div className="bottomHead">
                     <span className="bottomHeader">
                         Getting customers is the role of marketing, keeping them is the role of branding.

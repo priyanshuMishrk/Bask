@@ -3,12 +3,9 @@ import Sampath from "../Content/Sampath.jpg"
 import Prabhakaran from "../Content/Prabhakar.jpg"
 import PlaceHolder from "../Content/ServiCollage.png"
 import DefaultImage from "../Content/BaskImage.jpeg"
-import { Container } from "react-bootstrap";
 import Header from "../Components/Common/Header"
 import Footer from "../Components/Common/Footer";
 import { Link } from 'react-router-dom';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 
 const Teams = () => {

@@ -20,6 +20,11 @@
   font-size:medium;
 }
 
+.cp{
+  height: 4vw;
+  width: 16vw;
+}
+
 .navButton {
   background-color: #F7D319;
   padding: 1vw 2vw;
@@ -57,17 +62,23 @@
 }
 
 .mainFooter{
-  height: 5vw;
+  height: 3vw;
   background-color: #300DBE;
   bottom: 0; 
   z-index: 999;
-  position: relative;
+  position: fixed;
+  width: 100%;
 }
 
 .FooterItems{
   color: white !important;
   text-decoration: none;
-  margin-left: 5vw;
+  margin-left: 3vw;
+  text-align: center;
+}
+
+.footItem1{
+  margin-left: 40vw;
 }
 
 .invitationCont{
@@ -89,6 +100,7 @@
   margin-left: 20%;
   font-weight:normal;
   margin-bottom: 20vw;
+  margin-top: 3vw;
 }
 
 .infoHead{
@@ -100,6 +112,7 @@
 
 .invitationCont ul {
   list-style: none;
+  margin-bottom: 4vw;
 }
 
 .invitationCont ul li {
@@ -421,6 +434,7 @@
 .servStrategyText{
   flex-direction: column;
   color: #300DBE;
+  margin-top: 4vw;
 }
 
 .servStrategyTextHead {
@@ -464,8 +478,8 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding-top: 3vw;
-  font-size: 3vh;
+  padding-top: 5vw;
+  font-size: 3.5vh;
 
 }
 
@@ -480,11 +494,12 @@
 .HelpBox{
   display: flex;
   margin-bottom: 4vw;
+  justify-content: space-between;
 }
 
 .HelpImage img{
-  width: 40vw;
-  height: auto;
+  width: 30vw;
+  height: 30vw;
 }
 
 .imgCollague{
@@ -518,7 +533,7 @@
 
 .bottomButtonDiv{
   text-align: center;
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
 }
 
 .bottomButton{
@@ -558,6 +573,7 @@
 
 .mainImagePara{
   padding: 0vw 6vw;
+  margin-top: 3vw;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -572,9 +588,94 @@
   width: 20vw;
   object-fit: cover;
   margin: 1vw 1vw;
+  margin-bottom: 5vw;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 .image-gallery{
   margin-top: 5vw;
+}
+
+                                                              /* WorkInProgressPage.css */
+
+.wip-container {
+  text-align: center;
+  margin: 50px auto;
+  margin-top: 10vw;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+.wip-container h1 {
+  color: #300DBE; /* Orange color for emphasis */
+}
+
+.wip-container p {
+  font-size: 18px;
+}
+
+                                                                  /* Loader */
+.lds-ring {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  width: 100%;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #300DBE;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #300DBE transparent transparent transparent;
+  margin-bottom: 5vw;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+                                                  /* Home button */
+.home-button {
+  background-color: #300DBE; /* Blue background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding for button */
+  font-size: 16px; /* Font size */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s ease; /* Transition effect for background color */
+  /* margin-left: 25vw; */
+  /* margin-top: 3vw; */
+  display: block;
+  /* width: 50%; */
+  text-align: center;
+  text-decoration: none !important;
+  /* margin-bottom: 4vw; */
+}
+
+.home-button:hover {
+  background-color: #300dbead; /* Darker blue color on hover */
 }

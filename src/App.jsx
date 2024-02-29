@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import InternalWork from './Pages/OurWorkInternal';
 import ServiceInternal from './Pages/ServicesInternal';
 import Teams from './Pages/Teams';
+import WorkInProgressPage from './Pages/WorkInProgress';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
               {/* <Route path="/" element={<Home />} /> */}
               <Route path="/" element={<Enter />} />
               <Route path="/aboutus" element={<AboutUs/>}/>
-              <Route path="/workInternal" element={<InternalWork/>}/>
+              <Route path="/workInternal" element={<WorkInProgressPage/>}/>
               <Route path='/services' element={<ServiceInternal/>}/>
               <Route path='/team' element={<Teams/>}/>
               

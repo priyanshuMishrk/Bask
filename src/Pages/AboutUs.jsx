@@ -12,9 +12,11 @@ const AboutUs = () => {
             <div className="invitationInfo">
                 <p className="infoHead">We are pretty easy to find.</p>
                 <p className="infoPar">
-                    Opposite Paragon, near Monkey Bar, 
-                    right around Socials on Church Street,
-                    and just down the road from Blossoms.
+                    Just follow the smell of really, really, <b> really strong </b>
+                    coffee and plum cake, and mountains of
+                    shawarmas being carried in and you will have
+                    found us. Right around the corner from Thom's
+                    Bakery, we are pretty easy to spot.
                 </p>
             </div>
             <ul className="d-flex justify-content-between">
