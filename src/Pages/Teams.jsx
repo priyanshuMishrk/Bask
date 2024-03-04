@@ -14,9 +14,9 @@ const Teams = () => {
     const defaultImage = {
         id:0,src:DefaultImage,description:'BASK IS ABOUT BRIGHTENING UP THE WORLD. DRIVING CHANGE. REBELLING AGAINST CONVENTION. PUSHING FORWARD THE AGENDA OF PROGRESS IN MIND AND SPIRIT THROUGH CREATIVITY. DOING THINGS THAT WE LOVE AND HAVING A POSITIVE IMPACT ON EVERYONE WHO INTERACT WITH  OUR WORK. AND OUR CULTURE.',name:"BASK", Link1 :"https://www.instagram.com/weare_bask/", Link2 :"https://www.linkedin.com/company/baskworldwide-creative/", Link3:"mailto:info@blackis.in"
     }
-    if (!selectedImage){
-        setSelectedImage(defaultImage)
-    }
+    // if (!selectedImage){
+    //     setSelectedImage(defaultImage)
+    // }
   // Dummy image data (replace with your own)
   const images = [
     { id: 1, src: Sampath, description: `Sampath has varied experience in working with some of the finest creative agencies in India including Enterprise Advertising, Ambience, JWT and Contract. Over a career spanning 30 years he has worked on many multi-national as well as leading Indian Brands. The last 15 years he has been creating and helming his own ventures including start-ups in the charity and food & beverages space. With Bask, his latest venture, he is fashioning the agency of his dreams.`, name:"SAMPATH KUMAR" },
@@ -38,7 +38,7 @@ const Teams = () => {
 
   return (
 
-    <div>
+    <div className='TeamsPage'>
 
     <Header/>
     <div className='teamsCollague'>
@@ -46,10 +46,10 @@ const Teams = () => {
           {selectedImage && (
             <div className="mainImage">
               <div className='mainImageMain'>
-                <p>{selectedImage.name}</p>
                 <img src={selectedImage.src} alt={`Image ${selectedImage.id}`} />
+                <p>{selectedImage.name}</p>
               </div>
-                <div className='mainImagePara d-flex'>
+                <div className='mainImagePara d-flex '>
                     <p className='mainImPara'>{selectedImage.description}</p>
                     <div className='mainImLinks d-flex'>
                         <Link to={selectedImage.Link2} target="_blank" >LinkedIn</Link>
@@ -65,7 +65,7 @@ const Teams = () => {
               key={image.id}
               src={image.src}
               alt={` ${image.id}`}
-              onClick={() => handleImageClick(image)}
+              onMouseEnter={() => handleImageClick(image)}
             />
         ))}
       </div>

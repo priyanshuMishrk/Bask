@@ -7,11 +7,6 @@ const Hero = () => {
       <>
         <div className="d-flex justify-content-between align-items-center mb-5">
             <TextSlider />
-            <div className="imager">
-                <img src={DemoImage} alt="Demo" />
-                <img src={DemoImage} alt="Demo" />
-                <img src={DemoImage} alt="Demo" />
-            </div>
         </div>
       </>
     );

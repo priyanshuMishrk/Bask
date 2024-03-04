@@ -35,54 +35,52 @@ const Dropdown = () => {
   return (
     <div className='dropdown-main'>
         <div className="dropdown-container">
-          <div className="dropdown-header" onClick={toggleDropdown}>
+          {!isOpen && <div className="dropdown-header" onClick={toggleDropdown}>
             Who we are
-          </div>
+          </div>}
           {isOpen && (
-            <div className="dropdown-description">
-              <p>BRIGHTEN UP WITH BASK <br/>
-              <br/>
-
-BASK IS ABOUT BRIGHTENING UP THE WORLD. DRIVING CHANGE. REBELLING AGAINST CONVENTION. PUSHING FORWARD THE AGENDA OF PROGRESS IN MIND AND SPIRIT THROUGH CREATIVITY. DOING THINGS THAT WE LOVE AND HAVING A POSITIVE IMPACT ON EVERYONE WHO INTERACT WITH  OUR WORK. AND OUR CULTURE.</p>
+            <div className="dropdown-description" onClick={toggleDropdown}>
+              <p> <b>Brighten up with Bask.  </b>  
+               Bask is about brightening up the world. Driving change. Rebelling against convention. Pushing forward the agenda of progress in mind and spirit through creativity. Doing things that we love and having a positive impact on everyone who interact with  our work. And our culture.</p>
             </div>
           )}
         </div>
         <div className="dropdown-container1">
-          <div className="dropdown-header1" onClick={toggleDropdown1}>
+          { !isOpen1 && <div className="dropdown-header1" onClick={toggleDropdown1}>
             Our Services
-          </div>
+          </div>}
           {isOpen1 && (
-            <div className="dropdown-description1">
+            <div className="dropdown-description1" onClick={toggleDropdown1}>
               <p>We cover all the essentials, but our services are intuitively designed to fit every size of business like a glove.<br/> Check them all out.</p>
             </div>
           )}
         </div>
         <div className="dropdown-container2">
-          <div className="dropdown-header2" onClick={toggleDropdown2}>
+          {!isOpen2 && <div className="dropdown-header2" onClick={toggleDropdown2}>
             Our Portfolio
-          </div>
+          </div>}
           {isOpen2 && (
-            <div className="dropdown-description2">
+            <div className="dropdown-description2" onClick={toggleDropdown2}>
               <p>We’ve been around a while,  and we’ve earned the trust of several business owners, friends we didn’t know before.</p>
             </div>
           )}
         </div>
         <div className="dropdown-container3">
-          <div className="dropdown-header3" onClick={toggleDropdown3}>
+          { !isOpen3 && <div className="dropdown-header3" onClick={toggleDropdown3}>
             Join the team
-          </div>
+          </div>}
           {isOpen3 && (
-            <div className="dropdown-description3">
+            <div className="dropdown-description3" onClick={toggleDropdown3}>
               <p>Join Our Team. write to us with how you break the clutter and how you want to be a meaningful part of the narrative and we’ll get in touch, if you don’t know where to go. if you do, we are happy to have you, just head on over. <br/> Explore Careers</p>
             </div>
           )}
         </div>
         <div className="dropdown-container4">
-          <div className="dropdown-header4" onClick={toggleDropdown4}>
-            Contact Us, Let's get started
-          </div>
+          { !isOpen4 && <div className="dropdown-header4" onClick={toggleDropdown4}>
+            Let's get started
+          </div>}
           {isOpen4 && (
-            <div className="dropdown-description4">
+            <div className="dropdown-description4" onClick={toggleDropdown4}>
               <Link to={"https://www.linkedin.com/company/baskworldwide-creative/"} target="_blank" className='dLink' >LinkedIn</Link>
                 <Link to={"https://www.instagram.com/weare_bask/"}  target="_blank" className='dLink'>Instagram</Link>
                 <Link to={"mailto:info@blackis.in"} className='dLink'>Email</Link>
