@@ -1,8 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.8f3754ba.css",
-    "main.js": "/static/js/main.697867eb.js",
+    "main.css": "/static/css/main.98701843.css",
+    "main.js": "/static/js/main.f2cb034e.js",
     "static/js/453.09a2f884.chunk.js": "/static/js/453.09a2f884.chunk.js",
+    "static/media/workInternal8.jpg": "/static/media/workInternal8.a78aa236fc76cb07d0b3.jpg",
+    "static/media/workInternal5.jpg": "/static/media/workInternal5.391af4bc828dddf2e257.jpg",
+    "static/media/workInternal6.jpg": "/static/media/workInternal6.539dd358f488834a5f85.jpg",
+    "static/media/workInternal7.jpg": "/static/media/workInternal7.1f2b8a0b5eca06ebdc28.jpg",
+    "static/media/workInternal4.jpeg": "/static/media/workInternal4.d7897173279d34f72a79.jpeg",
+    "static/media/workInternal2.jpeg": "/static/media/workInternal2.270f3517ba293b6a4122.jpeg",
+    "static/media/workInternal1.jpeg": "/static/media/workInternal1.b318ea47a83e5e1b211a.jpeg",
+    "static/media/workInternal3.jpeg": "/static/media/workInternal3.25ecb38182ea07c2b798.jpeg",
     "static/media/PPNeueMontreal-Book.otf": "/static/media/PPNeueMontreal-Book.497a4d8a79ae3d85403f.otf",
     "static/media/BaskLogo.png": "/static/media/BaskLogo.8594744f3aea01a8cf23.png",
     "static/media/Prabhakar.jpg": "/static/media/Prabhakar.33f3f90138b89ac9c77e.jpg",
@@ -12,12 +20,13 @@
     "static/media/Strategy.png": "/static/media/Strategy.b881091f72004f028ab1.png",
     "static/media/Sampath.jpg": "/static/media/Sampath.941ae5b6b5487f8c462b.jpg",
     "index.html": "/index.html",
-    "main.8f3754ba.css.map": "/static/css/main.8f3754ba.css.map",
-    "main.697867eb.js.map": "/static/js/main.697867eb.js.map",
+    "static/media/rightArrow.svg": "/static/media/rightArrow.902e8004eb534f8aee7fabbab16262ac.svg",
+    "main.98701843.css.map": "/static/css/main.98701843.css.map",
+    "main.f2cb034e.js.map": "/static/js/main.f2cb034e.js.map",
     "453.09a2f884.chunk.js.map": "/static/js/453.09a2f884.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f3754ba.css",
-    "static/js/main.697867eb.js"
+    "static/css/main.98701843.css",
+    "static/js/main.f2cb034e.js"
   ]
 }
