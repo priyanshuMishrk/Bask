@@ -11,9 +11,9 @@ import { Link } from 'react-router-dom';
 const Teams = () => {
   // State to hold the selected image and its description
   const [selectedImage, setSelectedImage] = useState(null);
-    const defaultImage = {
-        id:0,src:DefaultImage,description:'BASK IS ABOUT BRIGHTENING UP THE WORLD. DRIVING CHANGE. REBELLING AGAINST CONVENTION. PUSHING FORWARD THE AGENDA OF PROGRESS IN MIND AND SPIRIT THROUGH CREATIVITY. DOING THINGS THAT WE LOVE AND HAVING A POSITIVE IMPACT ON EVERYONE WHO INTERACT WITH  OUR WORK. AND OUR CULTURE.',name:"BASK", Link1 :"https://www.instagram.com/weare_bask/", Link2 :"https://www.linkedin.com/company/baskworldwide-creative/", Link3:"mailto:info@blackis.in"
-    }
+    // const defaultImage = {
+    //     id:0,src:DefaultImage,description:'BASK IS ABOUT BRIGHTENING UP THE WORLD. DRIVING CHANGE. REBELLING AGAINST CONVENTION. PUSHING FORWARD THE AGENDA OF PROGRESS IN MIND AND SPIRIT THROUGH CREATIVITY. DOING THINGS THAT WE LOVE AND HAVING A POSITIVE IMPACT ON EVERYONE WHO INTERACT WITH  OUR WORK. AND OUR CULTURE.',name:"BASK", Link1 :"https://www.instagram.com/weare_bask/", Link2 :"https://www.linkedin.com/company/baskworldwide-creative/", Link3:"mailto:info@blackis.in"
+    // }
     // if (!selectedImage){
     //     setSelectedImage(defaultImage)
     // }
@@ -31,9 +31,26 @@ const Teams = () => {
     { id: 8, src: PlaceHolder, description: 'Description Will be shown once the image is placed ' ,name:"Currently not available"},
   ];
 
+
   // Function to handle image click
   const handleImageClick = (image) => {
     setSelectedImage(image);
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closePopup = () => {
+    setSelectedImage(false);
+  };
+
+  const handleOutsideClick = (e) => {
+    if (e.target.className === 'popup-overlay') {
+      closePopup();
+    }
   };
 
   return (
@@ -43,8 +60,15 @@ const Teams = () => {
     <Header/>
     <div className='teamsCollague'>
       {/* Render images */}
-          {selectedImage && (
-            <div className="mainImage">
+
+
+      <div>
+      {selectedImage && (
+        <div className="popup-overlay" onClick={handleOutsideClick}>
+          <div className="popup-content">
+          <span className="close-icon" onClick={closePopup}>
+              &times;
+            </span>
               <div className='mainImageMain'>
                 <img src={selectedImage.src} alt={`Image ${selectedImage.id}`} />
                 <p>{selectedImage.name}</p>
@@ -57,15 +81,17 @@ const Teams = () => {
                         <Link to={selectedImage.Link3}>Email</Link>
                     </div>
                 </div>
-            </div>
-          )}
+          </div>
+        </div>
+      )}
+    </div>
       <div className="image-gallery">
         {images.map((image) => (
             <img
               key={image.id}
               src={image.src}
               alt={` ${image.id}`}
-              onMouseEnter={() => handleImageClick(image)}
+              onClick={() => {handleImageClick(image); togglePopup()}}
             />
         ))}
       </div>

@@ -2,30 +2,27 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Header from "../Components/Common/Header"
 import Footer from "../Components/Common/Footer";
+import TabImage from "../Content/owiTab.png"
+import OviBox from "./../Content/owiBoxes.png"
+import OviRect from "./../Content/owiRect.png"
+import { Link } from "react-router-dom";
+
+import arrow from "../Content/rightArrow.svg"
 
 const AboutUs = () => {
     return (
-        <div className="p-0 m-1 mainpage">
+        <div className="">
           <Header />
-          <Container className="invitationCont">
-            <p className="invitation">Let's chat over kebabs and suleimani?</p>
-            <div className="invitationInfo">
-                <p className="infoHead">We are pretty easy to find.</p>
-                <p className="infoPar">
-                    Just follow the smell of really, <i>really </i>, <b> really strong </b>
-                    coffee and plum cake, and mountains of
-                    shawarmas being carried in and you will have
-                    found us. Right around the corner from Thom's
-                    Bakery, we are pretty easy to spot.
-                </p>
+          <Container >
+          <div className="d-flex owiTab abousTab">
+                <div className="tabText abousText">
+                Brighten up with Bask. Bask is about brightening up the world. Driving change. Rebelling against convention. Pushing forward the agenda of progress in mind and spirit through creativity. Doing things that we love and having a positive impact on everyone who interact with our work. And our culture.
+                </div>
             </div>
-            <ul className="d-flex justify-content-between">
-                <li> <a href=""> Instagram </a> </li>
-                <li> <a href=""> LinkedIn </a> </li>
-                <li> <a href=""> Facebook </a> </li>
-                <li> <a> Email </a></li>
-                <li> <a> Phone </a></li>
-            </ul>
+            <Link to={"/team"} className="aboutUS d-flex">
+                <span>  MEET OUR TEAM  </span>
+                <img src={arrow} alt="Arrow" className="arrow-icon" />
+            </Link>
           </Container>
           <Footer/>
         </div>

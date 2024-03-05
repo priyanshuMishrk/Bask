@@ -66,7 +66,7 @@ const ServiceDesign = () => {
                     </span>
                 </div>
                 <div className="bottomButtonDiv">
-                <Link to="/aboutus" className="bottomButton"> Say hello</Link>
+                <Link to="/contactus" className="bottomButton"> Say hello</Link>
                 </div>
 
             </div>
