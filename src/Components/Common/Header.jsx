@@ -2,10 +2,12 @@ import React , {useState,useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Logo from "../../Content/BaskLogo.png"
 import { Link } from "react-router-dom";
+import DropdownMenu from "../DropDown2";
 
 const Header = () => {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [screenWidth] = useState(window.innerWidth);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -82,6 +84,7 @@ const Header = () => {
 
     return (
       <>
+      {screenWidth > 650 ? <>
         <nav className={"active w-100 p-4 d-flex align-items-center homeNav"}>
         <div>
             <Link to="/">
@@ -97,7 +100,7 @@ const Header = () => {
         }}
         >
           <div className="dropdown">
-
+  
               <div className="dropdown-headers" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
               <span className={selectedDropdown?.dropdown === 'services'  ? 'activeLSD' : ''}>
               Services
@@ -113,7 +116,7 @@ const Header = () => {
         </div>
       )}
       </div>
-
+  
           </div>
             
             <span className={selectedLink === 'workInternal' ? 'activeLSD spanyLink' : 'spanyLink'} onClick={() => handleLinkClick('workInternal')}>
@@ -129,7 +132,7 @@ const Header = () => {
             </span>
         
         </Container>
-
+  
         <div>
             <Link to="/contactus" className="navButton rounded-4"> <i> Say Hello </i> </Link>
         </div>
@@ -139,6 +142,15 @@ const Header = () => {
           text-decoration: underline !important;
         }
       `}</style>
+      </>:<>'
+      <div className="newHead">
+        <div>
+          <img src={Logo} alt="Logo" />
+        </div>
+        <DropdownMenu/>
+      </div>
+      </>}
+      
       </>
     );
   };

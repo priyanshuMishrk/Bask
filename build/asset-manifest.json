@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.98701843.css",
-    "main.js": "/static/js/main.f2cb034e.js",
+    "main.css": "/static/css/main.1d76832c.css",
+    "main.js": "/static/js/main.73f0f74b.js",
     "static/js/453.09a2f884.chunk.js": "/static/js/453.09a2f884.chunk.js",
+    "static/media/workInternal11.jpg": "/static/media/workInternal11.5cc3afb1eac082f09e46.jpg",
+    "static/media/workInternal12.jpg": "/static/media/workInternal12.28bd7acd2ad0dca7b4f8.jpg",
+    "static/media/workInternal9.jpg": "/static/media/workInternal9.7011fee600064efd94a8.jpg",
+    "static/media/workInternal10.jpg": "/static/media/workInternal10.242a9f0bba4f271370eb.jpg",
     "static/media/workInternal8.jpg": "/static/media/workInternal8.a78aa236fc76cb07d0b3.jpg",
     "static/media/workInternal5.jpg": "/static/media/workInternal5.391af4bc828dddf2e257.jpg",
     "static/media/workInternal6.jpg": "/static/media/workInternal6.539dd358f488834a5f85.jpg",
@@ -19,14 +23,15 @@
     "static/media/Marketing.png": "/static/media/Marketing.76705eaf84d78b14c20d.png",
     "static/media/Strategy.png": "/static/media/Strategy.b881091f72004f028ab1.png",
     "static/media/Sampath.jpg": "/static/media/Sampath.941ae5b6b5487f8c462b.jpg",
+    "static/media/trustedBy2.webp": "/static/media/trustedBy2.d88e070ff926e4f08090.webp",
     "index.html": "/index.html",
     "static/media/rightArrow.svg": "/static/media/rightArrow.902e8004eb534f8aee7fabbab16262ac.svg",
-    "main.98701843.css.map": "/static/css/main.98701843.css.map",
-    "main.f2cb034e.js.map": "/static/js/main.f2cb034e.js.map",
+    "main.1d76832c.css.map": "/static/css/main.1d76832c.css.map",
+    "main.73f0f74b.js.map": "/static/js/main.73f0f74b.js.map",
     "453.09a2f884.chunk.js.map": "/static/js/453.09a2f884.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98701843.css",
-    "static/js/main.f2cb034e.js"
+    "static/css/main.1d76832c.css",
+    "static/js/main.73f0f74b.js"
   ]
 }

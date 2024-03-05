@@ -5,7 +5,7 @@ import Footer from "../Components/Common/Footer";
 
 const ContactUs = () => {
     return (
-        <div className="p-0 m-1 mainpage">
+        <div className="p-0 mainpage">
           <Header />
           <Container className="invitationCont">
             <p className="invitation">Let's chat over kebabs and suleimani?</p>

@@ -1,26 +1,16 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import Header from "../Components/Common/Header"
 import Footer from "../Components/Common/Footer";
-import TabImage from "../Content/owiTab.png"
-import OviBox from "./../Content/owiBoxes.png"
-import OviRect from "./../Content/owiRect.png"
-import { Link } from "react-router-dom";
-import WorkInternal1 from "../Content/workInternal1.jpeg"
-import WorkInternal2 from "../Content/workInternal2.jpeg"
-import WorkInternal3 from "../Content/workInternal3.jpeg"
-import WorkInternal4 from "../Content/workInternal4.jpeg"
-import workInternal5 from "../Content/workInternal5.jpg"
-import workInternal6 from "../Content/workInternal6.jpg"
-import workInternal7 from "../Content/workInternal7.jpg"
-import workInternal8 from "../Content/workInternal8.jpg"
+import ScrollingImages from "../Components/ImageSlider";
+import t1 from "../Content/trustedBy1.png"
+import t2 from "../Content/trustedBy2.webp"
 
 
 const InternalWork = () => {
     return (
         <div className="">
           <Header />
-          <Container className="">
+          {/* <Container className="owiiiii">
 
 
             <div className="d-flex owiTab">
@@ -52,7 +42,7 @@ We want to be nothing short of a <span className="ye">revolution</span>.
             <div className="d-flex oviApproach">
                 <div className="oviApproachIm">
                     <img src={workInternal5} alt="Box" />
-                    <img src={workInternal6} alt="Box" />
+                    <img src={workInternal6} alt="Box" className="LastIm" />
                 </div>
 
                 <div className="d-flex oviApproachText">
@@ -95,7 +85,21 @@ We want to be nothing short of a <span className="ye">revolution</span>.
                     </span>
                 </div>
             </div>
-          </Container>
+          </Container> */}
+          <div className="m-3">
+            <div className="superWork">
+                OUR WORK
+            </div>
+            <ScrollingImages/>
+            <div className="trustBy">
+                    <div>TRUSTE BY</div>
+                    <span>
+                        <img src={t1} alt="" />
+                        <img src={t2} alt="" />
+                    </span>
+                    <div>AND MANY MORE</div>
+            </div>
+          </div>
           <Footer/>
         </div>
       );

@@ -70,15 +70,15 @@ const Teams = () => {
               &times;
             </span>
               <div className='mainImageMain'>
-                <img src={selectedImage.src} alt={`Image ${selectedImage.id}`} />
+                <img src={selectedImage.src} alt={` ${selectedImage.id}`} />
                 <p>{selectedImage.name}</p>
               </div>
                 <div className='mainImagePara d-flex '>
                     <p className='mainImPara'>{selectedImage.description}</p>
                     <div className='mainImLinks d-flex'>
-                        <Link to={selectedImage.Link2} target="_blank" >LinkedIn</Link>
-                        <Link to={selectedImage.Link1}  target="_blank">Instagram</Link>
-                        <Link to={selectedImage.Link3}>Email</Link>
+                        <Link to={selectedImage.Link2} className="LinksTeam" target="_blank" >LinkedIn</Link>
+                        <Link to={selectedImage.Link1} className="LinksTeam" target="_blank">Instagram</Link>
+                        <Link to={selectedImage.Link3} className="LinksTeam" >Email</Link>
                     </div>
                 </div>
           </div>
