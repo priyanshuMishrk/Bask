@@ -145,7 +145,9 @@ const Header = () => {
       </>:<>'
       <div className="newHead">
         <div>
+         <a href="/">
           <img src={Logo} alt="Logo" />
+          </a> 
         </div>
         <DropdownMenu/>
       </div>
