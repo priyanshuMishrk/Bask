@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const DropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpening, setIsOpening] = useState(false);
+  const [screenWidth] = useState(window.innerWidth);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -73,7 +74,7 @@ const DropdownMenu = () => {
         <div className="line3"></div>
         <div className="line3"></div>
       </div>
-      <div className={`dropdown-content3 ${isOpen ? 'show3' : ''}`}>
+      <div className={`dropdown-content3 ${isOpen ? 'show3' : ''} ${screenWidth < 350 && isOpening ? 'mbb':''}`}>
         <div className='miniDropdown' onMouseEnter={toggleDropdown1} onMouseLeave={toggleDropdown1}>
           <div className={selectedDropdown?.dropdown === 'services'  ? 'activeLSD' : ''}>Services</div>
           {isOpening && (<div className="dropdown-content-mini">

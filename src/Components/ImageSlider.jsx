@@ -21,7 +21,7 @@ const ScrollingImages = () => {
   const [screenWidth] = useState(window.innerWidth);
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + (screenWidth > 430 ? 3 : 2)) % images.length);
+      setCurrentIndex((prevIndex) => (prevIndex + (screenWidth > 430 ? 3 : screenWidth > 350 ? 2 : 1)) % images.length);
     }, 3000);
 
     return () => clearInterval(interval);
@@ -30,7 +30,7 @@ const ScrollingImages = () => {
   return (
     <div className="scrolling-imagesOW">
       <div className="image-containerOW">
-        {images.slice(currentIndex, currentIndex + (screenWidth > 430 ? 3 : 2)).map((image, index) => (
+        {images.slice(currentIndex, currentIndex + (screenWidth > 430 ? 3 : screenWidth > 350 ? 2 : 1)).map((image, index) => (
           <img key={index} src={image} alt={`${index + 1}`} />
         ))}
       </div>
