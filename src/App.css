@@ -1849,5 +1849,46 @@
 .bottomButtonDiv {
   margin-bottom: 17vw;
 }
+.invitation {
+  color: #300DBE;
+  font-size: 14vw;
+  margin-bottom: 9vw;
+  line-height: 14.5vw;
+  font-weight: 600;
+  margin-top: 10vw;
+}
+
+.infoHead {
+  color: #300DBE;
+  font-size: 7vw;
+  font-weight: 600;
+  margin-bottom: 4vw;
+}
+.infoPar {
+  color: #300DBE;
+  font-size: 4.5vw;
+  width: 76%;
+  margin-left: 12%;
+  font-weight: normal;
+  margin-bottom: 20vw;
+  margin-top: 4vw;
+}
+.invitationCont ul li a {
+  color: #300DBE;
+  font-size: 4vw;
+  font-weight: 600;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.invitationCont ul {
+  margin-bottom: 8vw;
+  margin-right: 22vw;
+  /* width: 100%; */
+  /* align-items: baseline; */
+  /* justify-content: center; */
+  display: block !important;
+}
+
 
 }
